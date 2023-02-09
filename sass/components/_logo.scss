@@ -26,3 +26,10 @@
     color: $primaryColor;
   }
 }
+@media (max-width: 480px) {
+  .logo {
+    padding: 0;
+    margin-top: 16px;
+    margin-bottom: 16px;
+  }
+}

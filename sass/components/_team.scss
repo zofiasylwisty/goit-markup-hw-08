@@ -85,3 +85,24 @@
     }
   }
 }
+@media (max-width: 480px) {
+  .team {
+    display: flex;
+    flex-direction: column;
+    width: 480px;
+  }
+  .member {
+    font-family: $mainFontFamily;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.18;
+    color: $fifthColor;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 450px;
+    border: 1px solid green;
+    margin-left: 15px;
+    margin-bottom: 30px;
+  }
+}

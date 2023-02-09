@@ -53,3 +53,21 @@
     color: $primaryColor;
   }
 }
+@media (max-width: 480px) {
+  .footer__container {
+    display: flex;
+    flex-direction: column;
+    margin-top: 0;
+    align-items: center;
+  }
+  .footer__items {
+    padding: 0px;
+    margin: 0px;
+    margin-top: 60px;
+    width: 251px;
+    align-items: center;
+  }
+  .footer__logo {
+    margin-bottom: 20px;
+  }
+}

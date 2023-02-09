@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="description" content="Doradztwo biznesowe" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>WebStudio</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -60,6 +61,11 @@
           >
         </li>
       </ul>
+      <button type="button" class="header__menu">
+        <svg class="hamburger" height="16" width="24">
+          <use href="./images/icons.svg#icon-menu"></use>
+        </svg>
+      </button>
     </header>
     <main class="main">
       <div class="main__photo">
@@ -110,7 +116,7 @@
 
               <textarea
                 name="comment"
-                rows="8"
+                cols="62"
                 class="comment-area"
                 placeholder="Wprowadź tekst"
               ></textarea>
@@ -137,53 +143,49 @@
         <div class="container">
           <ul class="latin">
             <li class="latin__position">
-              <svg class="latin__icon" width="270" height="120">
+              <svg class="latin__icon">
                 <use href="./images/icons.svg#icon-antenna-1"></use>
               </svg>
               <h3 class="latin__title">LOREM IPSUM</h3>
               <p class="latin__text">
-                Lorem ipsum dolor sit amet, consectetur <br />
-                adipiscing elit. Nam vel arcu sem. Sed <br />
-                non sodales dui. Interdum et malesuada
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel
+                arcu sem. Sed non sodales dui. Interdum et malesuada
               </p>
             </li>
             <li class="latin__position">
-              <svg class="latin__icon" width="270" height="120">
+              <svg class="latin__icon">
                 <use href="./images/icons.svg#icon-clock-1"></use>
               </svg>
               <h3 class="latin__title">LOREM IPSUM</h3>
               <p class="latin__text">
-                Lorem ipsum dolor sit amet, consectetur <br />
-                adipiscing elit. Nam vel arcu sem. Sed <br />
-                non sodales dui. Interdum et malesuada
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel
+                arcu sem. Sed non sodales dui. Interdum et malesuada
               </p>
             </li>
             <li class="latin__position">
-              <svg class="latin__icon" width="270" height="120">
+              <svg class="latin__icon">
                 <use href="./images/icons.svg#icon-diagram-1"></use>
               </svg>
               <h3 class="latin__title">LOREM IPSUM</h3>
               <p class="latin__text">
-                Lorem ipsum dolor sit amet, consectetur <br />
-                adipiscing elit. Nam vel arcu sem. Sed <br />
-                non sodales dui. Interdum et malesuada
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel
+                arcu sem. Sed non sodales dui. Interdum et malesuada
               </p>
             </li>
-            <li class="latin_position">
-              <svg class="latin__icon" width="270" height="120">
+            <li class="latin__position">
+              <svg class="latin__icon">
                 <use href="./images/icons.svg#icon-astronaut-1"></use>
               </svg>
               <h3 class="latin__title">LOREM IPSUM</h3>
               <p class="latin__text">
-                Lorem ipsum dolor sit amet, consectetur <br />
-                adipiscing elit. Nam vel arcu sem. Sed <br />
-                non sodales dui. Interdum et malesuada
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel
+                arcu sem. Sed non sodales dui. Interdum et malesuada
               </p>
             </li>
           </ul>
         </div>
       </section>
-      <section class="section">
+      <section class="section-hidden">
         <div class="container">
           <h2 class="section__header">Czym się zajmujemy</h2>
           <ul class="offers">

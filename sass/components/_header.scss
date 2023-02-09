@@ -2,4 +2,40 @@
   display: flex;
   align-items: baseline;
   padding-left: 215px;
+  &__menu {
+    visibility: hidden;
+  }
+}
+
+@media (max-width: 480px) {
+  .navigation {
+    visibility: hidden;
+    margin: 0px;
+    padding: 0px;
+  }
+  .contacts {
+    visibility: hidden;
+    margin: 0px;
+    padding: 0px;
+  }
+  .header {
+    padding-left: 15px;
+    height: 60px;
+    &__menu {
+      visibility: visible;
+      cursor: pointer;
+      border: none;
+      background: none;
+      padding: 0px;
+      margin: 0px;
+      position: absolute;
+      top: 22px;
+      right: 22px;
+      border: 1px solid red;
+    }
+  }
+  .hamburger {
+    padding: 0px;
+    margin: 0px;
+  }
 }

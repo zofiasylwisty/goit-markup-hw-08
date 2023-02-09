@@ -8,5 +8,24 @@
     line-height: 1.16;
     color: $fifthColor;
     text-align: center;
+    margin-bottom: 30px;
+  }
+}
+.section-hidden {
+  padding: 94px 0px;
+}
+@media (max-width: 480px) {
+  .section__header {
+    font-size: 28px;
+  }
+}
+@media (max-width: 480px) {
+  .section {
+    padding: 60px 0px;
+  }
+  .section-hidden {
+    visibility: hidden;
+    height: 0px;
+    padding: 0px;
   }
 }

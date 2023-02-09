@@ -4,3 +4,8 @@
   background: $primaryColor;
   width: 1600px;
 }
+@media (max-width: 480px) {
+  .body {
+    width: 480px;
+  }
+}

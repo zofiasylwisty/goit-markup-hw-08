@@ -33,3 +33,12 @@
     @extend .agency;
   }
 }
+@media (max-width: 480px) {
+  .navigation__list {
+    margin: 0px;
+  }
+
+  .navigation {
+    margin: 0px;
+  }
+}
