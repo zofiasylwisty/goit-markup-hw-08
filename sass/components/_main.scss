@@ -1,0 +1,113 @@
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  &__photo {
+    background-color: $fourthColor;
+    width: 1600px;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(
+        to bottom,
+        rgba(47, 48, 58, 0.4) 0%,
+        rgba(47, 48, 58, 0.4) 50%
+      ),
+      url(../images/background-photo.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    box-shadow: 0px 4px 4px 0px var(--shadow-shadow);
+    margin: 0 auto;
+  }
+  &__headline {
+    font-family: $mainFontFamily;
+    font-size: 44px;
+    font-weight: 900;
+    letter-spacing: 0.06em;
+    line-height: 1.36;
+    text-align: center;
+    color: $primaryColor;
+    margin: 200px 452px 30px;
+  }
+  &__button {
+    color: $sixthColor;
+    background-color: $secondaryColor;
+    cursor: pointer;
+    border: none;
+    border-radius: 4px;
+    font-family: $mainFontFamily;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 1.8;
+    padding: 10px 41px 10px 42px;
+    width: 200px;
+    margin: 0px 700px 200px;
+    text-align: center;
+    transition-property: background-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  &__button:hover,
+  &__button:focus,
+  &__button:active {
+    color: $primaryColor;
+    background-color: $seventhColor;
+    text-align: center;
+  }
+  .main-backdrop {
+    display: flex;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.3);
+    transition-property: visibility;
+    visibility: visible;
+    animation-duration: 2000ms;
+    animation-timing-function: ease-in;
+    animation-direction: normal;
+    animation-fill-mode: forwards;
+    z-index: 1;
+  }
+  .is-hidden {
+    visibility: hidden;
+    pointer-events: none;
+    opacity: 0;
+  }
+  .is-hidden &__overlay {
+    transform: translate(-50%, -50%) scale(1.2);
+  }
+  &__overlay {
+    background: $primaryColor;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+      0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+    height: 581px;
+    width: 528px;
+    margin-top: 400px;
+    margin-left: 810px;
+    display: block;
+    transition-property: visibility opacity transform;
+    transition-duration: 2s;
+    transform: translate(-50%, -50%);
+    transition-timing-function: ease-in;
+    opacity: 1;
+    visibility: visible;
+    z-index: 2;
+  }
+  .form-header {
+    font-family: "Roboto";
+    color: $sixthColor;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 1.15em;
+    text-align: center;
+    letter-spacing: 0.03em;
+    margin-top: 40px;
+    margin-bottom: 0px;
+  }
+}

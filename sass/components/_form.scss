@@ -1,0 +1,131 @@
+.form {
+  display: flex;
+  flex-direction: column;
+  &__items {
+    margin: 0px 40px;
+  }
+  &__label {
+    font-family: $mainFontFamily;
+    color: $thirdColor;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 1.16em;
+    letter-spacing: 0.01em;
+    margin-bottom: 4px;
+    margin-top: 10px;
+  }
+  &__input > svg {
+    transition-property: fill;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  &__input:active > svg,
+  &__input:focus-within > svg,
+  &__input:hover > svg {
+    fill: $seventhColor;
+  }
+  &__icon {
+    height: 18px;
+    width: 18px;
+    margin-top: 11px;
+    margin-left: 12px;
+    position: absolute;
+  }
+  &__highlight {
+    height: 40px;
+    width: 448px;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+    padding-left: 42px;
+    outline: none;
+    transition-property: border-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  &__highlight:active,
+  &__highlight:focus,
+  &__highlight:hover {
+    border: 1px solid $seventhColor;
+    outline: none;
+  }
+  &__comment::placeholder {
+    font-family: $mainFontFamily;
+    font-style: normal;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 14px;
+    letter-spacing: 0.01em;
+    color: rgba(117, 117, 117, 0.5);
+  }
+  .comment-area {
+    font-family: $mainFontFamily;
+    color: rgba(117, 117, 117, 0.5);
+    font-size: 12px;
+    height: 120px;
+    width: 448px;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+    padding-top: 12px;
+    padding-left: 16px;
+    outline: none;
+    transition-property: border-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .comment-area:active,
+  .comment-area:focus,
+  .comment-area:hover {
+    border: 1px solid $seventhColor;
+    outline: none;
+  }
+  .checkbox__label {
+    font-family: $mainFontFamily;
+    color: $thirdColor;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.7em;
+    letter-spacing: 0.03em;
+    position: relative;
+    margin-left: 54px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+  }
+  .checkbox__link {
+    color: $seventhColor;
+  }
+  .checkbox__button {
+    background: $seventhColor;
+    border: none;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    height: 50px;
+    width: 200px;
+    border-radius: 4px;
+    display: inline-block;
+    margin-left: 164px;
+    margin-bottom: 40px;
+    cursor: pointer;
+  }
+  .checkbox__send {
+    font-family: $mainFontFamily;
+    color: $primaryColor;
+    font-style: normal;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 1.8em;
+    letter-spacing: 0.06em;
+  }
+  &__close {
+    height: 30px;
+    width: 30px;
+    background-color: $primaryColor;
+    border: 1px solid $closeColor;
+    border-radius: 50px;
+    cursor: pointer;
+    position: relative;
+    top: -570px;
+    left: 490px;
+  }
+  .close {
+    color: $fifthColor;
+  }
+}

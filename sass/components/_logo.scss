@@ -1,0 +1,28 @@
+.logo {
+  font-family: $logoFontFamily;
+  font-size: 26px;
+  font-weight: 700;
+  line-height: 1.19;
+  text-decoration: none;
+  margin-top: 24px;
+  margin-bottom: 25px;
+
+  &__blue {
+    @extend .logo;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    color: $seventhColor;
+  }
+  &__black {
+    @extend .logo;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    color: $fifthColor;
+  }
+  &__white {
+    @extend .logo;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    color: $primaryColor;
+  }
+}

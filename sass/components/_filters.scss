@@ -1,0 +1,35 @@
+.filters {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  margin: 110px 518px 56px 510px;
+  padding: 0px;
+  width: 572px;
+  & > .filters__item:not(:last-child) {
+    margin-right: 8px;
+  }
+  &__button {
+    color: $sixthColor;
+    background-color: $secondaryColor;
+    cursor: pointer;
+    border: none;
+    font-family: $mainFontFamily;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.16;
+    text-align: center;
+    padding: 6px 22px;
+    border-radius: 4px;
+  }
+  &__button:hover,
+  &__button:focus,
+  &__button:active {
+    color: $primaryColor;
+    background-color: $seventhColor;
+  }
+  &__button {
+    transition-property: color background-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+}

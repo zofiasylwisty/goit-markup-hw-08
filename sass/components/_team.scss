@@ -1,0 +1,87 @@
+.team {
+  display: flex;
+  justify-content: space-between;
+  padding: 0px;
+  list-style: none;
+
+  &__photo {
+    background-color: $primaryColor;
+    border-radius: 0px 0px 4px 4px;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+      0px 2px 1px rgba(0, 0, 0, 0.2);
+    .no-margin {
+      margin: 0px;
+    }
+  }
+  .member {
+    font-family: $mainFontFamily;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.18;
+    color: $fifthColor;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &__name {
+      font-family: $mainFontFamily;
+      color: rgba(33, 33, 33, 1);
+      padding-top: 30px;
+      margin-bottom: 10px;
+    }
+    &__position {
+      font-family: $mainFontFamily;
+      font-size: 16px;
+      line-height: 1.18;
+      color: rgba(117, 117, 117, 1);
+    }
+    .socials {
+      display: flex;
+      margin: 0px 32px 30px 32px;
+      padding: 0px;
+      list-style: none;
+      &__item {
+        margin-top: 16px;
+      }
+      &__item:not(:last-child) {
+        margin-right: 10px;
+      }
+      &__link:hover,
+      &__link:focus,
+      &__link:active {
+        fill: $primaryColor;
+      }
+      &__highlight {
+        width: 44px;
+        height: 44px;
+        border-radius: 50px;
+        padding: 12px;
+        background-color: $primaryColor;
+        transition-property: background-color;
+        transition-duration: 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+      }
+      &__highlight:hover,
+      &__highlight:focus,
+      &__highlight:active {
+        background-color: $seventhColor;
+      }
+      &__highlight:hover > svg {
+        fill: $primaryColor;
+      }
+      &__highlight > .socials__icon {
+        transition-property: fill;
+        transition-duration: 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+      }
+      &__icon {
+        fill: $disabledColor;
+      }
+      &__icon:hover,
+      &__icon:focus,
+      &__icon:active {
+        fill: $primaryColor;
+      }
+    }
+  }
+}

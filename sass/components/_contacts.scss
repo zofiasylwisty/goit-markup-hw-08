@@ -1,0 +1,30 @@
+.contacts {
+  display: flex;
+  padding-left: 0px;
+  margin: 32px 0px;
+  list-style: none;
+
+  & > .contacts__address:not(:last-child) {
+    margin-right: 50px;
+  }
+
+  &__link:hover,
+  &__link:focus,
+  &__link:active,
+  &__link:hover > svg {
+    color: $seventhColor;
+    fill: $seventhColor;
+  }
+
+  &__link {
+    @extend %headerText;
+    color: $thirdColor;
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  &__icon {
+    fill: $disabledColor;
+    margin-right: 10px;
+  }
+}

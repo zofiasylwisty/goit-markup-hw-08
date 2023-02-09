@@ -1,0 +1,29 @@
+.latin {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  padding-left: 0px;
+
+  &__title {
+    font-family: $mainFontFamily;
+    font-size: 14px;
+    line-height: 1.71;
+    font-weight: 700;
+    line-height: 1.14;
+    color: $fifthColor;
+    margin-bottom: 10px;
+  }
+  &__text {
+    font-family: $mainFontFamily;
+    font-size: 14px;
+    line-height: 1.71;
+    color: $thirdColor;
+  }
+  &__icon {
+    background-color: $secondaryColor;
+    width: 270;
+    height: 120;
+    border-radius: 4px;
+    padding: 25px;
+  }
+}

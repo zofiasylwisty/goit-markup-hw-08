@@ -1,0 +1,24 @@
+$primaryColor: #ffffff;
+$secondaryColor: #f5f4fa;
+$thirdColor: #757575;
+$fourthColor: #2f303a;
+$fifthColor: #000000;
+$sixthColor: #212121;
+$seventhColor: #2196f3;
+$eightColor: #ffffff99;
+$shadowColor: #00000040;
+$disabledColor: #afb1b8;
+$iconColor: rgba(255, 255, 255, 0.1);
+$closeColor: rgba(0, 0, 0, 0.1);
+$borderColor: #e5e5e5;
+$placeholderColor: rgba(255, 255, 255, 0.6);
+$mainFontFamily: "Roboto", sans-serif;
+$logoFontFamily: "Raleway", sans-serif;
+%headerText {
+  font-family: "Roboto";
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  text-decoration: none;
+  color: $fifthColor;
+}

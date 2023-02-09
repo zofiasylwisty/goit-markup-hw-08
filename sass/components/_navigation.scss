@@ -1,0 +1,35 @@
+.navigation {
+  padding-left: 0px;
+  margin: 32px 371px 0px 93px;
+
+  .navigation__list {
+    display: flex;
+    list-style: none;
+  }
+  .navigation__list > .navigation__item:not(:last-child) {
+    margin-right: 46px;
+  }
+  &__link:hover,
+  &__link:focus,
+  &__link:active {
+    color: $seventhColor;
+  }
+  .navigation__link {
+    @extend %headerText;
+  }
+  .agency::after {
+    content: "";
+    background-color: $seventhColor;
+    border-radius: 2px;
+    height: 4px;
+    width: 53px;
+    margin: 0;
+    padding: 0;
+    margin-top: 28px;
+    margin-bottom: -16px;
+    display: block;
+  }
+  .portfolio::after {
+    @extend .agency;
+  }
+}
