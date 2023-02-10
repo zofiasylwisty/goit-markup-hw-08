@@ -138,13 +138,23 @@
     position: relative;
     left: -12px;
     margin-left: 0px;
-    border: 1px solid green;
     margin-right: 0px;
     padding: 0px;
     width: 370px;
+  }
+  .chceckbox__text {
     font-size: 12px;
   }
   .comment-area {
     width: 370px;
+  }
+  .checkbox__link {
+    font-size: 12px;
+  }
+}
+@media (max-width: 480px) {
+  .checkbox__button {
+    position: relative;
+    left: -39px;
   }
 }

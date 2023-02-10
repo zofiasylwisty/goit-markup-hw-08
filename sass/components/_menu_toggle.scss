@@ -1,0 +1,22 @@
+.menu-toggle {
+  visibility: visible;
+}
+@media (max-width: 480px) {
+  .menu-toggle {
+    visibility: visible;
+    min-height: 40px;
+    min-width: 40px;
+    margin: 0;
+    padding: 0;
+    background-color: transparent;
+    cursor: pointer;
+    margin-left: 284px;
+    border: none;
+    border-radius: 50%;
+    outline: none;
+  }
+  .menu-toggle > svg:hover,
+  .menu-toggle > svg:focus {
+    fill: $seventhColor;
+  }
+}
