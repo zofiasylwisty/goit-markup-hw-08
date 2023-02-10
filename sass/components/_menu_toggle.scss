@@ -1,5 +1,5 @@
 .menu-toggle {
-  visibility: visible;
+  visibility: hidden;
 }
 @media (max-width: 480px) {
   .menu-toggle {
@@ -15,6 +15,7 @@
     border-radius: 50%;
     outline: none;
   }
+
   .menu-toggle > svg:hover,
   .menu-toggle > svg:focus {
     fill: $seventhColor;

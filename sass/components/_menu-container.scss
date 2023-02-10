@@ -3,7 +3,7 @@
 }
 @media (max-width: 480px) {
   .menu-container {
-    visibility: visible;
+    visibility: hidden;
     position: fixed;
     top: 0;
     left: 0;
@@ -15,7 +15,9 @@
     transform: translateX(0%);
     transition: transform 250ms ease-in-out;
   }
-
+  .menu-container .js-menu-container .is-open {
+    visibility: visible;
+  }
   .menu-container.is-open {
     transform: translateX(0);
   }
