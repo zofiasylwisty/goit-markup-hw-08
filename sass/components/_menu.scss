@@ -1,15 +1,4 @@
 @media (max-width: 480px) {
-  .menu .link {
-    padding: 10px;
-    color: inherit;
-    text-decoration: none;
-  }
-
-  .menu .link:hover,
-  .menu .link:focus {
-    text-decoration: underline;
-  }
-
   .menu-toggle {
     min-height: 40px;
     min-width: 40px;
@@ -21,23 +10,6 @@
     border: none;
     border-radius: 50%;
     outline: none;
-  }
-  .mobile-menu {
-    border: 1px solid red;
-    margin: 0px;
-  }
-  .mobile-addresses {
-    list-style: none;
-  }
-  .mobile-addresses__link {
-    text-decoration: none;
-  }
-  .mobile-socials {
-    display: flex;
-    list-style: none;
-  }
-  .mobile-socials__link {
-    text-decoration: none;
   }
 }
 @media (min-width: 768px) {
@@ -57,12 +29,12 @@
   left: 0;
   width: 100vw;
   height: 100vh;
-
-  background-color: #3f51b5;
+  background-color: white;
   z-index: 999;
-
   transform: translateX(100%);
   transition: transform 250ms ease-in-out;
+  display: flex;
+  flex-direction: column;
 }
 
 .menu-container.is-open {
@@ -73,18 +45,82 @@
   position: absolute;
   top: 16px;
   right: 16px;
-  color: #fff;
+  color: rgba(33, 33, 33, 1);
 }
 
 .mobile-menu {
   padding: 0;
-  margin: 0;
+  margin-left: 40px;
+  margin-top: 48px;
+  margin-bottom: 0px;
   list-style: none;
+  display: inline-block;
 }
 
-.mobile-menu .link {
-  display: block;
-  padding: 10px;
-  color: #fff;
+.link {
+  display: inline-block;
+  color: rgba(33, 33, 33, 1);
   text-decoration: none;
+  margin-bottom: 36px;
+  font-family: "Roboto";
+  font-size: 40px;
+  font-weight: 500;
+  line-height: 47px;
+  letter-spacing: 0.02em;
+}
+.link:hover,
+.link:focus {
+  color: $seventhColor;
+}
+
+.mobile-addresses {
+  list-style: none;
+  margin: 0px;
+  padding: 0px;
+  margin-left: 40px;
+  margin-top: 266px;
+}
+.mobile-addresses__link {
+  display: inline-block;
+  text-decoration: none;
+  margin-bottom: 32px;
+}
+.mobile-socials {
+  display: flex;
+  list-style: none;
+  margin: 0px;
+  padding: 0px;
+  margin-left: 40px;
+}
+.mobile-socials__link {
+  text-decoration: none;
+  display: inline-block;
+  margin-right: 20px;
+  font-family: Roboto;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 22px;
+  letter-spacing: 0.02em;
+  color: $seventhColor;
+}
+.mobile__phone {
+  font-family: $mainFontFamily;
+
+  text-decoration: none;
+  font-size: 34px;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+}
+.mobile__mail {
+  font-family: $mainFontFamily;
+  text-decoration: none;
+  font-size: 24px;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+}
+.mobile-addresses__link {
+  color: rgba(33, 150, 243, 1);
+}
+.gray {
+  color: rgba(117, 117, 117, 1);
 }
