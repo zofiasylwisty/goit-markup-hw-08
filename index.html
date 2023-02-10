@@ -26,7 +26,6 @@
         <span class="logo__blue">Web</span
         ><span class="logo__black">Studio</span>
       </a>
-      <!--Menu mobile -->
       <button
         class="menu-toggle js-open-menu"
         aria-expanded="false"
@@ -46,10 +45,11 @@
           ></path>
         </svg>
       </button>
-      <div class="menu-container js-menu-container is-open">
-        <button class="js-close-menu">
+
+      <div class="menu-container js-menu-container">
+        <button class="menu-toggle js-close-menu">
           <svg
-            fill="rgba(33, 33, 33, 1)"
+            fill="currentColor"
             viewBox="0 0 20 20"
             xmlns="http://www.w3.org/2000/svg"
             width="24"
@@ -62,35 +62,25 @@
             ></path>
           </svg>
         </button>
+
         <ul class="mobile-menu">
-          <li class="mobile__item"><a href="" class="link">Agencja</a></li>
-          <li class="mobile__item"><a href="" class="link">Portfolio</a></li>
+          <li><a href="" class="link">Agencja</a></li>
+          <li><a href="" class="link">Portfolio</a></li>
           <li><a href="" class="link">Kontakt</a></li>
         </ul>
-        <div class="mobile__addresses">
-          <a class="menu__tel" href="tel:+48111111111">+48 111 111 111</a>
-          <a class="menu__email" href="mailto:info@devstudio.com"
-            >info@devstudio.com</a
-          >
-        </div>
-        <ul class="menu__list">
-          <li class="menu__item">
-            <a class="menu__link" href="https://www.instagram.com/"
-              >Instagram</a
-            >
-          </li>
-          <li class="menu__item">
-            <a class="menu__link" href="https://twitter.com/">Twitter</a>
-          </li>
-          <li class="menu__item">
-            <a class="menu__link" href="https://www.facebook.com/">Facebook</a>
-          </li>
+        <ul class="mobile-addresses">
+          <li><a href="" class="mobile-addresses__link">+48 111 111 111</a></li>
           <li>
-            <a class="menu__link" href="https://www.linkedin.com/">LinkedIn</a>
+            <a href="" class="mobile-addresses__link">info@devstudio.com</a>
           </li>
         </ul>
+        <ul class="mobile-socials">
+          <li><a href="" class="mobile-socials__link">Instagram</a></li>
+          <li><a href="" class="mobile-socials__link">Twitter</a></li>
+          <li><a href="" class="mobile-socials__link">Facebook</a></li>
+          <li><a href="" class="mobile-socials__link">LinkedIn</a></li>
+        </ul>
       </div>
-
       <nav class="navigation">
         <ul class="navigation__list">
           <li class="navigation__item agency">
