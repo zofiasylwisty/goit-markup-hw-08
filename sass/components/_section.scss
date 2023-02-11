@@ -33,6 +33,15 @@
 @media (min-width: 481px) and (max-width: 768px) {
   .section {
     width: 768px;
-    padding: 60px 0px;
+    padding: 60px 0px 0px;
+  }
+  .section-hidden {
+    display: none;
+    visibility: hidden;
+    height: 0px;
+    padding: 0px;
+  }
+  .section__header {
+    font-size: 28px;
   }
 }

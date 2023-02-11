@@ -124,3 +124,8 @@
 .gray {
   color: rgba(117, 117, 117, 1);
 }
+@media (min-width: 481px) and (max-width: 768px) {
+  .menu-toggle {
+    display: none;
+  }
+}

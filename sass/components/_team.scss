@@ -106,3 +106,17 @@
     margin-bottom: 30px;
   }
 }
+@media (min-width: 481px) and (max-width: 768px) {
+  .team {
+    width: 768px;
+    width: 768px;
+    margin-top: 0px;
+    margin-left: 0px;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+  }
+  .member {
+    width: 354px;
+  }
+}
