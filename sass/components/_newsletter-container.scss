@@ -91,3 +91,22 @@
     margin-bottom: 90px;
   }
 }
+@media (min-width: 481px) and (max-width: 768px) {
+  .newsletter-container {
+    display: inline-block;
+    margin-left: 166px;
+  }
+
+  .newsletter {
+    margin: 0px;
+    top: 20px;
+    left: 130px;
+    margin-bottom: 90px;
+  }
+  .notification__heading {
+    text-align: center;
+  }
+  .notification__input {
+    width: 450px;
+  }
+}

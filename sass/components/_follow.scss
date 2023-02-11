@@ -56,3 +56,14 @@
     text-align: center;
   }
 }
+@media (min-width: 481px) and (max-width: 768px) {
+  .follow {
+    display: inline-block;
+    padding: 0px;
+    margin: 0px;
+    margin-left: 144px;
+    text-align: center;
+    position: relative;
+    top: -56px;
+  }
+}

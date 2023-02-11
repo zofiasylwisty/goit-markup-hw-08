@@ -75,7 +75,22 @@
   }
 }
 @media (min-width: 481px) and (max-width: 768px) {
-  .main {
+  .footer {
     width: 768px;
+  }
+  .footer__container {
+    display: block;
+    width: 768px;
+    padding: 0px;
+  }
+  .footer__items {
+    display: inline-block;
+    padding: 0px;
+    width: 253px;
+    text-align: center;
+    margin-left: 76px;
+  }
+  .footer__logo {
+    margin-bottom: 20px;
   }
 }
