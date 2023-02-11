@@ -38,3 +38,16 @@
     justify-content: center;
   }
 }
+@media (min-width: 481px) and (max-width: 768px) {
+  .clients {
+    width: 768px;
+    margin-top: 0px;
+    margin-left: 0px;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+  }
+  .clients__icon {
+    width: 226px;
+  }
+}
