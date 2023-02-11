@@ -54,6 +54,9 @@
   }
 }
 @media (max-width: 480px) {
+  .footer {
+    width: 480px;
+  }
   .footer__container {
     display: flex;
     flex-direction: column;
@@ -69,5 +72,10 @@
   }
   .footer__logo {
     margin-bottom: 20px;
+  }
+}
+@media (min-width: 481px) and (max-width: 768px) {
+  .main {
+    width: 768px;
   }
 }

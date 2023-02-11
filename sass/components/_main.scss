@@ -112,6 +112,9 @@
   }
 }
 @media (max-width: 480px) {
+  .main {
+    width: 480px;
+  }
   .main__photo {
     width: 480px;
     height: 400px;
@@ -143,5 +146,10 @@
   .form-header {
     width: 370px;
     margin-left: 40px;
+  }
+}
+@media (min-width: 481px) and (max-width: 768px) {
+  .main {
+    width: 768px;
   }
 }

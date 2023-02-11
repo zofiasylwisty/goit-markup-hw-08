@@ -1,5 +1,5 @@
 .newsletter-container {
-  margin-left: 0px;
+  margin-left: 78px;
   margin-top: 0px;
 }
 .notification {
@@ -69,20 +69,25 @@
   }
 }
 @media (max-width: 480px) {
+  .newsletter-container {
+    margin-left: 0px;
+    margin-top: 0px;
+  }
   .notification__heading {
     margin: 0px;
     padding: 0px;
-    text-align: center;
+    margin-left: 130px;
     margin-bottom: 20px;
   }
   .notification__input {
     width: 450px;
-    margin-left: 15px;
+    margin-left: 0px;
+    margin-right: 0px;
   }
   .newsletter {
     margin: 0px;
     top: 20px;
-    left: 140px;
+    left: 130px;
     margin-bottom: 90px;
   }
 }
