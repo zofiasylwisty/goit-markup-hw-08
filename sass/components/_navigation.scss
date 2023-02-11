@@ -42,3 +42,21 @@
     margin: 0px;
   }
 }
+@media (min-width: 481px) and (max-width: 768px) {
+  .navigation {
+    padding-left: 0px;
+    margin: 0px;
+  }
+  .navigation__list > .navigation__item:not(:last-child) {
+    margin-right: 60px;
+  }
+  .navigation__list {
+    padding-left: 83px;
+    margin: 0px;
+    margin-top: 32px;
+  }
+  .agency::after {
+    position: relative;
+    top: -2px;
+  }
+}

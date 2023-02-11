@@ -57,3 +57,20 @@
     }
   }
 }
+@media (min-width: 481px) and (max-width: 768px) {
+  .latin {
+    width: 768px;
+    margin-top: 0px;
+    margin-left: 215px;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+  }
+  .latin__text {
+    width: 354px;
+  }
+  .latin__icon {
+    margin: 0;
+    width: 354px;
+  }
+}
