@@ -115,10 +115,25 @@
   display: inline-block;
   margin: 40px 40px 0px 40px;
 }
+@media (min-device-pixel-ratio: 2),
+  (-webkit-min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .main__photo {
+  }
+}
+@media (min-width: 480px) {
+  .main__photo {
+    max-width: 480px;
+  }
+}
 
 @media (min-width: 768px) {
   .main {
     align-items: center;
+  }
+  .main__photo {
+    max-width: 768px;
   }
   .main__overlay {
     margin-top: 513px;
@@ -126,6 +141,10 @@
 }
 
 @media (min-width: 1200px) {
+  .main__photo {
+    height: 600px;
+    max-width: 1600px;
+  }
   .main__overlay {
     margin-top: 526px;
     height: 581px;
