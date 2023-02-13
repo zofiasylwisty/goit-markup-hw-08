@@ -4,3 +4,8 @@
   position: relative;
   font-family: $mainFontFamily;
 }
+@media (min-width: 300px) {
+  .body {
+    overflow-x: hidden;
+  }
+}

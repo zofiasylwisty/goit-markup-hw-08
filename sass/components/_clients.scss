@@ -1,8 +1,14 @@
 .clients {
   display: flex;
-  justify-content: space-between;
   padding: 0px;
   list-style: none;
+  padding: 0px;
+  margin: 0px;
+  margin-top: 30px;
+  flex-wrap: wrap;
+  gap: 26px;
+  width: 100vw;
+  max-width: 450px;
 
   &__item {
     border: 1px solid $disabledColor;
@@ -19,6 +25,10 @@
 
   &__icon {
     fill: $disabledColor;
+    height: 92px;
+    max-width: 210px;
+    width: 100vw;
+    padding: 20px;
   }
   &__icon:hover,
   &__icon:focus,
@@ -29,25 +39,23 @@
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   }
 }
-@media (max-width: 480px) {
+
+@media (min-width: 768px) {
   .clients {
     flex-wrap: wrap;
-    gap: 30px;
-    margin: 0px;
-    padding: 0px;
-    justify-content: center;
+    width: 100vw;
+    max-width: 738px;
+    &__icon {
+      max-width: 226px;
+    }
   }
 }
-@media (min-width: 481px) and (max-width: 768px) {
+@media (min-width: 1200px) {
   .clients {
-    width: 768px;
-    margin-top: 0px;
-    margin-left: 0px;
-    flex-wrap: wrap;
-    gap: 30px;
+    flex-wrap: nowrap;
     justify-content: center;
-  }
-  .clients__icon {
-    width: 226px;
+    &__icon {
+      max-width: 170px;
+    }
   }
 }
