@@ -4,7 +4,6 @@
 @media (min-width: 768px) {
   .navigation {
     display: inline-block;
-
     &__list {
       display: flex;
       list-style: none;
@@ -29,10 +28,17 @@
       transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     }
   }
+  .agency {
+    border-bottom: 4px solid rgba(33, 150, 243, 1);
+    border-radius: 2px;
+    position: relative;
+    top: 29px;
+  }
 }
 @media (min-width: 1200px) {
   .navigation {
-    margin-right: 210px;
+    margin-right: 340px;
+    margin-left: 93px;
   }
   .navigation__list > .navigation__item:not(:last-child) {
     margin-right: 46px;
