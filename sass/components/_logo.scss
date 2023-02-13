@@ -4,38 +4,25 @@
   font-weight: 700;
   line-height: 1.19;
   text-decoration: none;
-  margin-top: 24px;
-  margin-bottom: 25px;
 
   &__blue {
     @extend .logo;
-    margin-top: 0px;
-    margin-bottom: 0px;
     color: $seventhColor;
   }
   &__black {
     @extend .logo;
-    margin-top: 0px;
-    margin-bottom: 0px;
     color: $fifthColor;
   }
   &__white {
     @extend .logo;
-    margin-top: 0px;
-    margin-bottom: 0px;
     color: $primaryColor;
   }
 }
-@media (max-width: 480px) {
-  .logo {
-    padding: 0;
-    margin-top: 16px;
-    margin-bottom: 16px;
-  }
+.logo-position {
+  margin-left: 15px;
 }
-@media (min-width: 481px) and (max-width: 768px) {
-  .logo {
-    margin-top: 26px;
-    margin-bottom: 26px;
+@media (min-width: 1200px) {
+  .logo-position {
+    margin-left: 130px;
   }
 }

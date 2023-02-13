@@ -1,48 +1,27 @@
 .section {
-  padding: 94px 0px;
-
-  &__header {
-    font-family: $mainFontFamily;
-    font-size: 36px;
-    font-weight: 700;
-    line-height: 1.16;
-    color: $fifthColor;
-    text-align: center;
-    margin-bottom: 30px;
-  }
+  padding: 60px 0px;
 }
-.section-hidden {
-  padding: 94px 0px;
+.section__header {
+  font-size: 28px;
+  font-family: $mainFontFamily;
+  font-weight: 700;
+  line-height: 1.16;
+  color: $fifthColor;
+  text-align: center;
+  margin: 0px;
 }
-@media (max-width: 480px) {
-  .section__header {
-    font-size: 28px;
-  }
-}
-@media (max-width: 480px) {
-  .section {
-    padding: 60px 0px;
-  }
-  .section-hidden {
-    visibility: hidden;
-    height: 0px;
-    padding: 0px;
-  }
+.hidden-section {
+  display: none;
 }
 
-@media (min-width: 481px) and (max-width: 768px) {
+@media (min-width: 1200px) {
   .section {
-    width: 768px;
-    padding: 60px 0px 0px;
+    padding: 94px 0px;
+    &__header {
+      font-size: 36px;
+    }
   }
-  .section-hidden {
-    display: none;
-    visibility: hidden;
-    height: 0px;
-    padding: 0px;
-  }
-  .section__header {
-    font-size: 28px;
-    letter-spacing: 0.03em;
+  .hidden-section {
+    display: block;
   }
 }

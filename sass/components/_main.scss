@@ -2,10 +2,12 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+
   &__photo {
     background-color: $fourthColor;
-    width: 1600px;
-    height: 600px;
+
+    width: 100vw;
+    height: 400px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -16,6 +18,7 @@
         rgba(47, 48, 58, 0.4) 50%
       ),
       url(../images/background-photo.jpg);
+
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -23,155 +26,113 @@
     margin: 0 auto;
   }
   &__headline {
-    font-family: $mainFontFamily;
-    font-size: 44px;
+    font-family: "Roboto";
+    font-size: 26px;
     font-weight: 900;
+    line-height: 42px;
     letter-spacing: 0.06em;
-    line-height: 1.36;
     text-align: center;
     color: $primaryColor;
-    margin: 200px 452px 30px;
+    margin-top: 0px;
   }
-  &__button {
-    color: $sixthColor;
-    background-color: $secondaryColor;
-    cursor: pointer;
-    border: none;
-    border-radius: 4px;
-    font-family: $mainFontFamily;
-    font-size: 16px;
-    font-weight: 700;
-    line-height: 1.8;
-    padding: 10px 41px 10px 42px;
-    width: 200px;
-    margin: 0px 700px 200px;
-    text-align: center;
-    transition-property: background-color;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.main__button {
+  color: $sixthColor;
+  background-color: $secondaryColor;
+  cursor: pointer;
+  border: none;
+  border-radius: 4px;
+  font-family: $mainFontFamily;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.8;
+  width: 200px;
+  margin-top: 13px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  text-align: center;
+  transition-property: background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.main__button:hover,
+.main__button:focus,
+.main__button:active {
+  color: $primaryColor;
+  background-color: $seventhColor;
+}
+.main-backdrop {
+  display: flex;
+
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  height: 100%;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.3);
+  transition-property: visibility;
+  visibility: visible;
+  animation-duration: 2000ms;
+  animation-timing-function: ease-in;
+  animation-direction: normal;
+  animation-fill-mode: forwards;
+  z-index: 1;
+}
+.is-hidden {
+  visibility: hidden;
+  pointer-events: none;
+  opacity: 0;
+}
+.is-hidden .main__overlay {
+  transform: translate(-50%, -50%) scale(1.2);
+}
+.main__overlay {
+  background: $primaryColor;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+  height: 609px;
+  width: 450px;
+  display: inline-block;
+  transition-property: visibility opacity transform;
+  transition-duration: 2s;
+  transform: translate(-50%, -50%);
+  transition-timing-function: ease-in;
+  opacity: 1;
+  visibility: visible;
+  z-index: 2;
+  margin-top: 398px;
+  margin-left: 50%;
+}
+.form-header {
+  font-family: "Roboto";
+  color: $sixthColor;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 30px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  display: inline-block;
+  margin: 40px 40px 0px 40px;
+}
+
+@media (min-width: 768px) {
+  .main {
+    align-items: center;
   }
-  &__button:hover,
-  &__button:focus,
-  &__button:active {
-    color: $primaryColor;
-    background-color: $seventhColor;
-    text-align: center;
+  .main__overlay {
+    margin-top: 513px;
   }
-  .main-backdrop {
-    display: flex;
-    position: absolute;
-    top: 0px;
-    left: 0px;
-    height: 100%;
-    width: 100%;
-    background: rgba(0, 0, 0, 0.3);
-    transition-property: visibility;
-    visibility: visible;
-    animation-duration: 2000ms;
-    animation-timing-function: ease-in;
-    animation-direction: normal;
-    animation-fill-mode: forwards;
-    z-index: 1;
-  }
-  .is-hidden {
-    visibility: hidden;
-    pointer-events: none;
-    opacity: 0;
-  }
-  .is-hidden &__overlay {
-    transform: translate(-50%, -50%) scale(1.2);
-  }
-  &__overlay {
-    background: $primaryColor;
-    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
-      0px 2px 1px rgba(0, 0, 0, 0.2);
-    border-radius: 4px;
+}
+
+@media (min-width: 1200px) {
+  .main__overlay {
+    margin-top: 526px;
     height: 581px;
     width: 528px;
-    margin-top: 400px;
-    margin-left: 810px;
-    display: block;
-    transition-property: visibility opacity transform;
-    transition-duration: 2s;
-    transform: translate(-50%, -50%);
-    transition-timing-function: ease-in;
-    opacity: 1;
-    visibility: visible;
-    z-index: 2;
   }
   .form-header {
-    font-family: "Roboto";
-    color: $sixthColor;
-    font-size: 20px;
-    font-weight: 700;
-    line-height: 1.15em;
-    text-align: center;
-    letter-spacing: 0.03em;
-    margin-top: 40px;
-    margin-bottom: 0px;
-  }
-}
-@media (max-width: 480px) {
-  .main {
-    width: 480px;
-  }
-  .main__photo {
-    width: 480px;
-    height: 400px;
-    margin-bottom: 0px;
-  }
-}
-@media (max-width: 480px) {
-  .main__headline {
-    font-size: 26px;
-    margin: 118px 58px 0px 57px;
-  }
-}
-@media (max-width: 480px) {
-  .main__button {
-    font-size: 16px;
-    font-weight: 700;
-    line-height: 1.8;
-    padding: 10px 41px 10px 42px;
-    width: 200px;
-    margin: 30px 140px 118px 140px;
-    text-align: center;
-  }
-  .main__overlay {
-    position: absolute;
-    width: 450px;
-    height: 609px;
-    margin-left: 240px;
-  }
-  .form-header {
-    width: 370px;
-    margin-left: 40px;
-  }
-}
-@media (min-width: 481px) and (max-width: 768px) {
-  .main {
-    width: 768px;
-  }
-  .main__photo {
-    width: 768px;
-  }
-  .main__headline {
-    font-size: 26px;
-    letter-spacing: 0.06em;
-    margin: 118px 201px 40px 202px;
-  }
-  .main__button {
-    margin-bottom: 118px;
-  }
-  .main__overlay {
-    position: absolute;
-    width: 450px;
-    height: 609px;
-    margin-left: 384px;
-    margin-top: 613px;
-  }
-  .form-header {
-    width: 370px;
-    margin-left: 40px;
+    width: 448px;
+    margin: 40px 40px 0px;
   }
 }

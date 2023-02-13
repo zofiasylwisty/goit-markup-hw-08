@@ -1,21 +1,10 @@
-@media (max-width: 480px) {
-  .menu-toggle {
-    min-height: 40px;
-    min-width: 40px;
-    margin: 0;
-    margin-left: 284px;
-    padding: 0;
-    background-color: transparent;
-    cursor: pointer;
-    border: none;
-    border-radius: 50%;
-    outline: none;
-  }
-}
-@media (min-width: 768px) {
-  .menu-toggle {
-    display: none;
-  }
+.menu-toggle {
+  margin-right: 22px;
+  background-color: transparent;
+  cursor: pointer;
+  border: none;
+  border-radius: 50%;
+  outline: none;
 }
 
 .menu-toggle > svg:hover,
@@ -124,7 +113,7 @@
 .gray {
   color: rgba(117, 117, 117, 1);
 }
-@media (min-width: 481px) and (max-width: 768px) {
+@media (min-width: 768px) {
   .menu-toggle {
     display: none;
   }

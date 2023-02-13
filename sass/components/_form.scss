@@ -33,11 +33,12 @@
   }
   &__highlight {
     height: 40px;
-    width: 448px;
+    width: 370px;
     border: 1px solid rgba(33, 33, 33, 0.2);
     border-radius: 4px;
     padding-left: 42px;
     outline: none;
+
     transition-property: border-color;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -62,7 +63,7 @@
     color: rgba(117, 117, 117, 0.5);
     font-size: 12px;
     height: 120px;
-
+    width: 370px;
     border: 1px solid rgba(33, 33, 33, 0.2);
     border-radius: 4px;
     padding-top: 12px;
@@ -81,12 +82,12 @@
   .checkbox__label {
     font-family: $mainFontFamily;
     color: $thirdColor;
-    font-size: 14px;
+    font-size: 12px;
     font-weight: 400;
     line-height: 1.7em;
     letter-spacing: 0.03em;
     position: relative;
-    margin-left: 54px;
+    margin-left: 43px;
     margin-top: 20px;
     margin-bottom: 30px;
   }
@@ -101,7 +102,7 @@
     width: 200px;
     border-radius: 4px;
     display: inline-block;
-    margin-left: 164px;
+    margin-left: 125px;
     margin-bottom: 40px;
     cursor: pointer;
   }
@@ -122,42 +123,38 @@
     border-radius: 50px;
     cursor: pointer;
     position: relative;
-    top: -570px;
-    left: 490px;
+    top: -605px;
+    left: 412px;
   }
   .close {
     color: $fifthColor;
   }
 }
 
-@media (max-width: 768px) {
-  .form__highlight {
-    width: 370px;
-  }
-  .checkbox__label {
-    position: relative;
-    left: -12px;
-    margin-left: 0px;
-    margin-right: 0px;
-    padding: 0px;
-    width: 370px;
-  }
-  .chceckbox__text {
-    font-size: 12px;
-  }
-  .comment-area {
-    width: 370px;
-  }
-  .checkbox__link {
-    font-size: 12px;
-  }
-
-  .checkbox__button {
-    position: relative;
-    left: -39px;
-  }
+@media (min-width: 768px) {
   .form__close {
-    top: -595px;
-    left: 415px;
+    top: -604px;
+    left: 412px;
+  }
+}
+@media (min-width: 1200px) {
+  .form__highlight {
+    width: 448px;
+  }
+  .form {
+    .comment-area {
+      width: 448px;
+    }
+    .checkbox__label {
+      font-size: 14px;
+      margin-left: 55px;
+    }
+    .checkbox__button {
+      margin-left: 164px;
+    }
+    .form__close {
+      top: -578px;
+      left: 490px;
+    }
   }
 }

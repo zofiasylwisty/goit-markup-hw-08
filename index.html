@@ -22,10 +22,12 @@
   </head>
   <body class="body">
     <header class="header">
-      <a class="logo" href="./index.html">
-        <span class="logo__blue">Web</span
-        ><span class="logo__black">Studio</span>
-      </a>
+      <div class="logo-position">
+        <a class="logo" href="./index.html">
+          <span class="logo__blue">Web</span
+          ><span class="logo__black">Studio</span>
+        </a>
+      </div>
       <button
         class="menu-toggle js-open-menu"
         aria-expanded="false"
@@ -174,7 +176,7 @@
 
               <textarea
                 name="comment"
-                cols="62"
+                cols="8"
                 class="comment-area"
                 placeholder="Wprowadź tekst"
               ></textarea>
@@ -243,7 +245,7 @@
           </ul>
         </div>
       </section>
-      <section class="section-hidden">
+      <section class="section hidden-section">
         <div class="container">
           <h2 class="section__header">Czym się zajmujemy</h2>
           <ul class="offers">
@@ -293,9 +295,8 @@
             <li class="team__photo">
               <figure class="no-margin">
                 <img
+                  class="team__image"
                   alt="picture of a product designer"
-                  width="270"
-                  height="260"
                   src="images/productdesign.jpg"
                 />
                 <figcaption class="member">
@@ -345,9 +346,8 @@
             <li class="team__photo">
               <figure class="no-margin">
                 <img
+                  class="team__image"
                   alt="picture of a frontend developer"
-                  width="270"
-                  height="260"
                   src="images/frontend.jpg"
                 />
                 <figcaption class="member">
@@ -397,9 +397,8 @@
             <li class="team__photo">
               <figure class="no-margin">
                 <img
+                  class="team__image"
                   alt="picture of a marketing specialist"
-                  width="270"
-                  height="260"
                   src="images/marketing.jpg"
                 />
                 <figcaption class="member">
@@ -449,9 +448,8 @@
             <li class="team__photo">
               <figure class="no-margin">
                 <img
+                  class="team__image"
                   alt="picture of a UI designer"
-                  width="270"
-                  height="260"
                   src="images/uidesigner.jpg"
                 />
                 <figcaption class="member">

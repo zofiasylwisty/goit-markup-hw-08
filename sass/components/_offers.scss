@@ -5,10 +5,12 @@
   padding: 0px;
   list-style: none;
 
+  width: 1200px;
   &__photo {
     position: relative;
     width: 100%;
     max-width: 370px;
+    margin-right: 0px;
   }
   &__graphics {
     display: block;

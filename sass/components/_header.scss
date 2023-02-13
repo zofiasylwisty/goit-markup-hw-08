@@ -1,50 +1,18 @@
 .header {
+  width: 100vw;
+  height: 60px;
   display: flex;
-  align-items: baseline;
-  padding-left: 215px;
-  &__menu {
-    visibility: hidden;
-  }
+  justify-content: space-between;
+  align-items: center;
 }
 
-@media (max-width: 480px) {
-  .navigation {
-    visibility: hidden;
-    margin: 0px;
-    padding: 0px;
-  }
-  .contacts {
-    visibility: hidden;
-    margin: 0px;
-    padding: 0px;
-  }
+@media (min-width: 768px) {
   .header {
-    padding-left: 15px;
-    height: 60px;
-    &__menu {
-      visibility: visible;
-      cursor: pointer;
-      border: none;
-      background: none;
-      padding: 0px;
-      margin: 0px;
-      position: absolute;
-      top: 22px;
-      right: 22px;
-      border: 1px solid red;
-    }
-  }
-  .hamburger {
-    padding: 0px;
-    margin: 0px;
+    height: 80px;
   }
 }
-@media (min-width: 481px) and (max-width: 768px) {
+@media (min-width: 1200px) {
   .header {
-    width: 768px;
-    height: 80px;
-    align-items: normal;
-    padding: 0px;
-    margin-left: 15px;
+    justify-content: space-around;
   }
 }
